@@ -1,0 +1,28 @@
+.wrapper {
+    display: flex;
+    width: 100%;
+    background-color: white;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 4rem;
+    font-size: 0.75rem;
+
+    .copyright {
+        color: #707070;
+    }
+
+    .socials {
+        display: flex;
+    }
+
+    .nav {
+        display: flex;
+        list-style: none;
+        gap: 0.75rem;
+
+        a {
+            color: #707070;
+            text-decoration: none;
+        }
+    }
+}

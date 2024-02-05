@@ -1,0 +1,27 @@
+.wrapper {
+    display: flex;
+    background-color: black;
+    align-items: end;
+    justify-content: space-between;
+    padding: 1rem 4rem;
+
+    .logo {
+        height: 70px;
+    }
+
+    .nav {
+        display: flex;
+        list-style: none;
+        font-size: 0.85rem;
+
+        a {
+            color: white;
+            text-decoration: none;
+            padding: 0 0.5rem;
+        }
+
+        li:not(:last-child) {
+            border-right: 2px solid white;
+        }
+    }
+}
