@@ -8,7 +8,7 @@
         display: grid;
         grid-template-columns: 1fr 2fr;
         gap: 2rem;
-        
+
         img {
             width: 100%;
             height: 100%;
@@ -25,14 +25,36 @@
                 font-weight: 500;
             }
 
-            p {
-
-            }
+            p {}
 
             h3 {
                 text-align: end;
                 font-size: 1.5rem;
             }
         }
+    }
+
+    .dropdown {
+        display: flex;
+        flex-direction: column;
+
+        .bookTypes {
+            display: flex;
+            justify-content: space-between;
+
+
+            .bookInfo {
+                padding: 0.5rem;
+                background-color: #eee;
+                border-radius: 1rem;
+                border: 2px solid gray;
+
+                .book {
+                    display: flex;
+                }
+            }
+        }
+
+
     }
 }

@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import style from './RoomCard.module.scss'
+import { Button } from '../Button/Button'
 
 export const RoomCard = ({ img, title, space, persons, description, price }) => {
 
@@ -24,16 +25,26 @@ export const RoomCard = ({ img, title, space, persons, description, price }) => 
                     <ul>
 
                     </ul>
-                    <div>
-                        <figure>
-
+                    <div className={style.bookTypes}>
+                        <figure className={style.bookInfo}>
+                            <h2>NORMAL pris inkl. morgenmad</h2>
+                            <p>Kan ikke ændres eller afbestilles</p>
+                            <div className={style.book}>
+                                <h2> DKK/nat</h2>
+                                <Button>Book</Button>
+                            </div>
                         </figure>
-                        <figure>
-
+                        <figure className={style.bookInfo}>
+                            <h2>NORMAL pris inkl. morgenmad</h2>
+                            <p>Kan ikke ændres eller afbestilles</p>
+                            <div className={style.book}>
+                                <h2> DKK/nat</h2>
+                                <Button>Book</Button>
+                            </div>
                         </figure>
                     </div>
                 </article>
-                <button onClick={() => setOpen(!open)}><img style={{rotate: open ? '180deg' : '0deg'}} src={`../../../src/assets/images/arrow.svg`} /></button>
+                <button onClick={() => setOpen(!open)}><img style={{ rotate: open ? '180deg' : '0deg' }} src={`../../../src/assets/images/arrow.svg`} /></button>
             </div>
         </>
     )
