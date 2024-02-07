@@ -1,0 +1,14 @@
+.select {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    box-shadow: 0px 0px 10px 0px grey;
+    width: 100%;
+    gap: 1rem;
+
+    li {
+        padding: 1rem 0.25rem;
+        cursor: pointer;
+    }
+}

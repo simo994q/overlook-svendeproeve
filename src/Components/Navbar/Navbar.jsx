@@ -6,13 +6,13 @@ export const Navbar = () => {
   return (
     <>
       <nav className={style.wrapper}>
-        <img src="images/hotel-overlook-logo.png" alt="Logo" className={style.logo} />
+        <img src="../../src/assets/images/hotel-overlook-logo.png" alt="Logo" className={style.logo} />
         <ul className={style.nav}>
           <li><NavLink to='/'>FORSIDE</NavLink></li>
-          <li><NavLink to='/'>HOTELLER OG DESTINATIONER</NavLink></li>
-          <li><NavLink to='/'>VÆRELSER</NavLink></li>
-          <li><NavLink to='/'>RESERVATION</NavLink></li>
-          <li><NavLink to='/'>LOGIN</NavLink></li>
+          <li><NavLink to='/countries/danmark'>HOTELLER OG DESTINATIONER</NavLink></li>
+          <li><NavLink to='/rooms'>VÆRELSER</NavLink></li>
+          <li><NavLink to='/reservations'>RESERVATION</NavLink></li>
+          <li><NavLink to='/login'>LOGIN</NavLink></li>
         </ul>
       </nav>
     </>
