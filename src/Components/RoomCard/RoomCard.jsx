@@ -2,13 +2,13 @@ import React, { useState } from 'react'
 import style from './RoomCard.module.scss'
 import { Button } from '../Button/Button'
 
-export const RoomCard = ({ img, title, space, persons, description, price }) => {
+export const RoomCard = ({ img, title, space, persons, description, price, onClick }) => {
 
     const [open, setOpen] = useState(false)
 
     return (
         <>
-            <div className={style.fullWrapper}>
+            <div className={style.fullWrapper} >
 
                 <figure className={style.infoWrapper}>
                     <img src={`../../../src/assets/images/${img}`} />
@@ -31,7 +31,7 @@ export const RoomCard = ({ img, title, space, persons, description, price }) => 
                             <p>Kan ikke ændres eller afbestilles</p>
                             <div className={style.book}>
                                 <h2> DKK/nat</h2>
-                                <Button>Book</Button>
+                                <Button onClick={onClick}>Book</Button>
                             </div>
                         </figure>
                         <figure className={style.bookInfo}>
@@ -39,7 +39,7 @@ export const RoomCard = ({ img, title, space, persons, description, price }) => 
                             <p>Kan ikke ændres eller afbestilles</p>
                             <div className={style.book}>
                                 <h2> DKK/nat</h2>
-                                <Button>Book</Button>
+                                <Button onClick={onClick}>Book</Button>
                             </div>
                         </figure>
                     </div>

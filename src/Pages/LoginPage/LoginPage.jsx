@@ -18,7 +18,7 @@ export const LoginPage = () => {
     lastname: '',
     email: '',
     password: '',
-    active: 1,
+    is_active: 1,
     org_id: 1,
     refresh_token: '1234',
     groups: 1
@@ -51,7 +51,7 @@ export const LoginPage = () => {
     body.append("lastname", newInfo.lastname)
     body.append("email", newInfo.email)
     body.append("password", newInfo.password)
-    body.append("active", newInfo.active)
+    body.append("is_active", newInfo.is_active)
     body.append("org_id", newInfo.org_id)
     body.append("refresh_token", newInfo.refresh_token)
     body.append("groups", newInfo.groups)
@@ -78,6 +78,8 @@ export const LoginPage = () => {
           <>
             du er logget ind som {user.firstname}
             <Button onClick={() => setUser(null)}>Log ud</Button>
+
+            <h3>dine reservationer:</h3>
           </>
           :
           <>
@@ -110,10 +112,6 @@ export const LoginPage = () => {
             }
           </>
         }
-
-
-
-
 
       </div>
     </>

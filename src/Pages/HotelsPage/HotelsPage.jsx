@@ -44,8 +44,9 @@ export const HotelsPage = () => {
                     {hotels ?
                         <>
                             {hotels.cities[0].hotels.map((hotel, i) => {
+                                console.log(hotel);
                                 return (
-                                    <NavLink to={`/countries/${country}/${city}`} key={i}>
+                                    <NavLink to={`/countries/${country}/${city}/${hotel.slug}`} key={i}>
                                         <NoInfoCard img={`../../src/assets/images/${hotel.HotelImage.hotel_image_filename}`} title={hotel.title} />
                                     </NavLink>
                                 )

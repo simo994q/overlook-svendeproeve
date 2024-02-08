@@ -24,7 +24,7 @@ function App() {
             <Route path='/countries/:country' Component={() => <CountryPage key={window.location.pathname} />} />
             <Route path='/countries/:country/:city' element={<HotelsPage />} />
             <Route path='/countries/:country/:city/:hotel' element={<RoomsPage />} />
-            <Route path='/selectedroom' element={<SelectedRoomPage />} />
+            <Route path='/rooms' element={<SelectedRoomPage />} />
             <Route path='/login' element={<LoginPage />} />
             <Route path='/reservations' element={<ReservationsPage />} />
             <Route path='/review' element={<ReviewPage />} />
